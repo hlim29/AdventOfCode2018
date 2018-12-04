@@ -19,6 +19,11 @@ namespace AdventOfCode
                         calibrator.Calibrate();
                         calibrator.FirstFrequency();
                         break;
+                    case 2:
+                        var badge = new DayTwo();
+                        badge.Process();
+                        badge.GetCorrectBox();
+                        break;
                     case -1:
                         Console.WriteLine("Invalid day. Please try again.");
                         break;
