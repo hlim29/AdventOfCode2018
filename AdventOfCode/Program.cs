@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdventOfCode.Days;
+using System;
 
 namespace AdventOfCode
 {
@@ -7,9 +8,34 @@ namespace AdventOfCode
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Advent of Code 2018");
-            Console.WriteLine("Please enter in a day (1-25):");
-            var input = ParseInput(Console.ReadLine());
+            var input = -1;
+            while (input == -1)
+            {
+                input = AskForDay();
+                switch (input)
+                {
+                    case 1:
+                        var calibrator = new DayOne();
+                        calibrator.Calibrate();
+                        calibrator.FirstFrequency();
+                        break;
+                    case -1:
+                        Console.WriteLine("Invalid day. Please try again.");
+                        break;
+                    default:
+                        Console.WriteLine("Invalid day. Please try again.");
+                        break;
+                }
+                input = -1;
+            }
+            
             //TODO: Days go here
+        }
+
+        static int AskForDay()
+        {
+            Console.WriteLine("Please enter in a day (1-25):");
+            return ParseInput(Console.ReadLine());
         }
 
         static int ParseInput(string input)
