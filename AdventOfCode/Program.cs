@@ -34,6 +34,11 @@ namespace AdventOfCode
                         sleep.GetSleepiestGuard();
                         sleep.GetSleepiestGuardByMinute();
                         break;
+                    case 5:
+                        var polymer = new DayFive();
+                        polymer.React();
+                        polymer.FindShorestPolymer();
+                        break;
                     case -1:
                         Console.WriteLine("Invalid day. Please try again.");
                         break;
