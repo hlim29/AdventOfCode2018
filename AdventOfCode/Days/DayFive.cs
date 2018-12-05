@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -7,6 +8,14 @@ namespace AdventOfCode.Days
 {
     public class DayFive
     {
+        private readonly List<char> _characters;
+        private readonly string _input;
+
+        public DayFive()
+        {
+            _input = ReadFile().Trim();
+            _characters = _input.ToLower().ToCharArray().Distinct().ToList();
+        }
         public void FindShorestPolymer()
         {
             var best = GetBestPolymer(ReadFile().Trim());
@@ -15,7 +24,7 @@ namespace AdventOfCode.Days
 
         public void React()
         {
-            var originalInput = ReadFile().Trim();
+            var originalInput = _input;
             var input = originalInput;
             var prevInputLength = 0;
             while (input.Length != prevInputLength)
@@ -28,9 +37,8 @@ namespace AdventOfCode.Days
 
         private Tuple<char, int> GetBestPolymer(string originalInput)
         {
-            var best = new Tuple<char, int>('0',int.MaxValue);
-            var characters = originalInput.ToLower().ToCharArray().Distinct();
-            foreach (var character in characters)
+            var best = new Tuple<char, int>('0', int.MaxValue);
+            foreach (var character in _characters)
             {
                 var cleanedPolymer = originalInput.Replace(character.ToString(), "").Replace(char.ToUpper(character).ToString(), "");
                 var prevInputLength = 0;
@@ -54,24 +62,12 @@ namespace AdventOfCode.Days
 
         private string RemoveOppositePolarities(string input)
         {
-            var buffer = new StringBuilder();
-            for(int i = 1; i < input.Length; i++)
+            foreach(var lowerChar in _characters)
             {
-                if (char.ToLowerInvariant(input[i-1]) == char.ToLowerInvariant(input[i]) && input[i - 1]!= input[i])
-                {
-                    i++;
-                }
-                else
-                {
-                    buffer.Append(input[i-1]);
-                }
-
-                if (i == input.Length - 1)
-                {
-                    buffer.Append(input[i]);
-                }
+                var pattern = new string[] { lowerChar.ToString() + char.ToUpper(lowerChar),  char.ToUpper(lowerChar).ToString() + lowerChar };
+                input = input.Replace(pattern[0], "").Replace(pattern[1], "");
             }
-            return buffer.ToString();
+            return input;
         }
     }
 }
