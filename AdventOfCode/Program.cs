@@ -29,6 +29,11 @@ namespace AdventOfCode
                         fabric.CountOverlaps();
                         fabric.ShowNonOverlap();
                         break;
+                    case 4:
+                        var sleep = new DayFour();
+                        sleep.GetSleepiestGuard();
+                        sleep.GetSleepiestGuardByMinute();
+                        break;
                     case -1:
                         Console.WriteLine("Invalid day. Please try again.");
                         break;
