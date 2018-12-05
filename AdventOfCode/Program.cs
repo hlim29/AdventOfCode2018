@@ -24,6 +24,11 @@ namespace AdventOfCode
                         badge.Process();
                         badge.GetCorrectBox();
                         break;
+                    case 3:
+                        var fabric = new DayThree();
+                        fabric.CountOverlaps();
+                        fabric.ShowNonOverlap();
+                        break;
                     case -1:
                         Console.WriteLine("Invalid day. Please try again.");
                         break;

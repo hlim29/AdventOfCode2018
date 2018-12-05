@@ -20,7 +20,7 @@ namespace AdventOfCode.Days
             Console.WriteLine($"Checksum: {CalculateChecksum()}");
         }
 
-        private void GetCorrectBox()
+        public void GetCorrectBox()
         {
             FindClosest(ReadFile().ToList());
         }
