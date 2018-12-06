@@ -39,6 +39,11 @@ namespace AdventOfCode
                         polymer.React();
                         polymer.FindShorestPolymer();
                         break;
+                    case 6:
+                        var manhattan = new DaySix();
+                        manhattan.GetLargestFinite();
+                        manhattan.GetSafestLocation();
+                        break;
                     case -1:
                         Console.WriteLine("Invalid day. Please try again.");
                         break;

@@ -14,3 +14,4 @@
 [Day 3: No Matter How You Slice It](https://adventofcode.com/2018/day/3)|✔️|✔️|
 [Day 4: Repose Record](https://adventofcode.com/2018/day/4)|✔️|✔️|
 [Day 5: Alchemical Reduction](https://adventofcode.com/2018/day/5)|✔️|✔️|
+[Day 6: Chronal Coordinates](https://adventofcode.com/2018/day/6)|✔️|✔️|
