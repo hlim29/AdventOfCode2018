@@ -44,6 +44,10 @@ namespace AdventOfCode
                         manhattan.GetLargestFinite();
                         manhattan.GetSafestLocation();
                         break;
+                    case 7:
+                        var sleigh = new DaySeven();
+                        sleigh.PartOne();
+                        break;
                     case -1:
                         Console.WriteLine("Invalid day. Please try again.");
                         break;
