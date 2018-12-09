@@ -15,4 +15,5 @@
 [Day 4: Repose Record](https://adventofcode.com/2018/day/4)|✔️|✔️|
 [Day 5: Alchemical Reduction](https://adventofcode.com/2018/day/5)|✔️|✔️|
 [Day 6: Chronal Coordinates](https://adventofcode.com/2018/day/6)|✔️|✔️|
-[Day 7: The Sum of Its Parts](https://adventofcode.com/2018/day/7)|✔️|❌|
+[Day 7: The Sum of Its Parts](https://adventofcode.com/2018/day/7)|✔️|🤔|
+[Day 9: Marble Mania](https://adventofcode.com/2018/day/9)|✔️|✔️|

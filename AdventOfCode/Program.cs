@@ -48,6 +48,11 @@ namespace AdventOfCode
                         var sleigh = new DaySeven();
                         sleigh.PartOne();
                         break;
+                    case 9:
+                        var marble = new DayNine();
+                        marble.GetHiscore();
+                        marble.GetHiscoreWithHighMarble();
+                        break;
                     case -1:
                         Console.WriteLine("Invalid day. Please try again.");
                         break;
