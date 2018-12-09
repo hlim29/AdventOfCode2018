@@ -48,6 +48,9 @@ namespace AdventOfCode
                         var sleigh = new DaySeven();
                         sleigh.PartOne();
                         break;
+                    case 8:
+                        var node = new DayEight();
+                        break;
                     case 9:
                         var marble = new DayNine();
                         marble.GetHiscore();
