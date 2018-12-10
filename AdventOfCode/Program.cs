@@ -56,6 +56,10 @@ namespace AdventOfCode
                         marble.GetHiscore();
                         marble.GetHiscoreWithHighMarble();
                         break;
+                    case 10:
+                        var stars = new DayTen();
+                        stars.UserInput();
+                        break;
                     case -1:
                         Console.WriteLine("Invalid day. Please try again.");
                         break;
@@ -65,8 +69,6 @@ namespace AdventOfCode
                 }
                 input = -1;
             }
-            
-            //TODO: Days go here
         }
 
         static int AskForDay()

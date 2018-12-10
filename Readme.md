@@ -18,3 +18,4 @@
 [Day 7: The Sum of Its Parts](https://adventofcode.com/2018/day/7)|✔️|🤔|[Day seven](https://github.com/hlim29/AdventOfCode2018/blob/master/AdventOfCode/Days/DaySeven.cs)|
 [Day 8: Memory Manoeuvre](https://adventofcode.com/2018/day/8)|✔️|🤔|[Day eight](https://github.com/hlim29/AdventOfCode2018/blob/master/AdventOfCode/Days/DayEight.cs)|
 [Day 9: Marble Mania](https://adventofcode.com/2018/day/9)|✔️|✔️|[Day nine](https://github.com/hlim29/AdventOfCode2018/blob/master/AdventOfCode/Days/DayNine.cs)|
+[Day 10: The Stars Align](https://adventofcode.com/2018/day/10)|✔️|✔️|[Day ten](https://github.com/hlim29/AdventOfCode2018/blob/master/AdventOfCode/Days/DayTen.cs)|
