@@ -60,6 +60,11 @@ namespace AdventOfCode
                         var stars = new DayTen();
                         stars.UserInput();
                         break;
+                    case 11:
+                        var fuel = new DayEleven();
+                        fuel.GetLargestFixedSquare();
+                        fuel.GetLargestFlexibleSquare();
+                        break;
                     case -1:
                         Console.WriteLine("Invalid day. Please try again.");
                         break;

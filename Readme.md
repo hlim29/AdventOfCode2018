@@ -19,3 +19,4 @@
 [Day 8: Memory Manoeuvre](https://adventofcode.com/2018/day/8)|✔️|🤔|[Day eight](https://github.com/hlim29/AdventOfCode2018/blob/master/AdventOfCode/Days/DayEight.cs)|
 [Day 9: Marble Mania](https://adventofcode.com/2018/day/9)|✔️|✔️|[Day nine](https://github.com/hlim29/AdventOfCode2018/blob/master/AdventOfCode/Days/DayNine.cs)|
 [Day 10: The Stars Align](https://adventofcode.com/2018/day/10)|✔️|✔️|[Day ten](https://github.com/hlim29/AdventOfCode2018/blob/master/AdventOfCode/Days/DayTen.cs)|
+[Day 11: Chronal Charge](https://adventofcode.com/2018/day/11)|✔️|✔️|[Day eleven](https://github.com/hlim29/AdventOfCode2018/blob/master/AdventOfCode/Days/DayEleven.cs)|
