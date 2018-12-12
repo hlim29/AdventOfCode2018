@@ -65,6 +65,11 @@ namespace AdventOfCode
                         fuel.GetLargestFixedSquare();
                         fuel.GetLargestFlexibleSquare();
                         break;
+                    case 12:
+                        var plants = new DayTwelve();
+                        plants.UserInput();
+                        plants.Billions();
+                        break;
                     case -1:
                         Console.WriteLine("Invalid day. Please try again.");
                         break;
